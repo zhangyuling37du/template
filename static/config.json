@@ -1,0 +1,10 @@
+{
+  "development":
+  {
+    "BASE_API": "http://192.168.7.46:8080"
+  },
+  "production":
+  {
+    "BASE_API": "http://192.168.7.46:8080"
+  }
+}

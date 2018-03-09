@@ -1,0 +1,61 @@
+@border: 1px solid #ccc;
+.com-paint-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-box {
+  padding: 20px;
+  display: flex;
+  &-left {
+    border-right: 1px solid #ccc;
+  }
+  &-right {
+    &-binding {
+      width: 100%;
+      height: 196px;
+      border: 1px dashed #126f7e;
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 196px;
+        line-height: 196px;
+        color: #126f7e;
+      }
+    }
+  }
+}
+
+.main-box-right-but {
+  background: #e6e6e6;
+  width: 142px;
+  margin: 20px 10rem;
+}
+
+.leftDetail {
+  height: 760px; // overflow: auto;
+  &-list {
+    padding: 10px 0px; // border-top: @border;
+    border-bottom: @border;
+    span {
+      color: #1f2d3d;
+    }
+  }
+  &-active {
+    border-bottom: @border;
+    span {
+      color: #565656;
+      font-size: 16px;
+    }
+  }
+  &-message {
+    background: #e6e6e6;
+    width: 90px;
+    margin-top: 20px
+  }
+}
+
+.leftDetail .el-form-item {
+  margin-bottom: 0px;
+}

@@ -1,0 +1,183 @@
+  @borderColor: #2f959a;
+  .com-paint-head {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-box {
+    height: 100%;
+    display: flex;
+  }
+
+  .el-tabs__item.is-active {
+    background: #10707e;
+    background-size: 100% 100%;
+    width: 50%;
+  }
+
+  .radioCor i {
+    font-size: 22px;
+  }
+
+  .el-form-item {
+    margin-bottom: 10px;
+  }
+
+  .image-text1 {
+    margin-left: 30px;
+    span i {
+      padding: 0 10px;
+    }
+  }
+
+  .template-added-left {
+    height: 100%;
+    width: 20%;
+    overflow-y: auto;
+    background: #fff;
+    .attribute {
+      cursor: pointer;
+    }
+     
+    .layer {
+      cursor: pointer;
+    }
+    &-layer {
+       overflow: hidden;
+    }
+  }
+
+
+
+  .template-added-left-attribute {
+    padding: 10px 10px 10px 10px;
+    font-size: 12px;
+    color: #888888;
+  }
+
+  .layCet-right.active {
+    color: #ffffff;
+    background: #2f959a;
+  }
+
+  .template-added-right {
+    width: 80%;
+    min-height: 47.21rem;
+    background: #4f4f4f;
+    margin-left: 10px;
+    position: relative;
+  }
+
+  .template-added-right-message {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    width: 177px;
+    color: #fff;
+    span {
+      color: #fff;
+    }
+  }
+
+  .canvas {
+    position: absolute;
+    overflow: hidden;
+    // background: #fff;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    width: 57rem;
+    height: 45rem;
+    cursor: move;
+  }
+
+  .canType-cont {
+    width: 100%;
+    height: 100%;
+  }
+   // 多选框
+  .el-checkbox+.el-checkbox {
+    margin-left: 0px;
+  }
+
+  .canType-net {
+    position: absolute; // width: 10px;
+    // height: 10px;
+    width: 5px;
+    height: 5px;
+    bottom: -4px;
+    right: -4px;
+    z-index: 99;
+    background: red; // border-right: 1px solid red;
+    // border-bottom: 1px solid red;
+    cursor: nw-resize;
+    /*阻止选中*/
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none; // opacity: 0.1;
+  }
+
+  .textType {
+    position: absolute; // border: 1px dashed @borderColor;
+  }
+
+  .textType.active .canType-cell {
+    border-color: #2f959a;
+  }
+
+  .photoType.active .canType-cell {
+    border-color: #2f959a;
+  }
+
+  .barcodeType.active .canType-cell {
+    border-color: #2f959a;
+  }
+
+  .priceType.active .canType-cell {
+    border-color: #2f959a;
+  }
+
+  .RECType.active .canType-cell {
+    border-color: #2f959a;
+  }
+
+  .canType-cell {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 1px dashed #ccc; // left: 0;
+  }
+
+  .photoType,
+  .barcodeType,
+  .priceType,
+  .RECType {
+    position: absolute;
+  }
+
+  .scaleIn {
+    outline: none;
+    width: 23px;
+    height: 11px;
+    border: none;
+  }
+
+  .el-radio-button__inner {
+    background: none;
+  }
+  .layCet {
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+    line-height: 30px;
+    i {
+      margin: 10px;
+    }
+    &-right {
+      width: 100%;
+      height: 100%;
+    }
+  }

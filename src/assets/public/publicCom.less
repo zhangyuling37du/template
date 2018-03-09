@@ -1,0 +1,222 @@
+ @import "../theme/theme.less";
+
+
+ html,
+ body {
+   width: 100%;
+   height: 100%;
+ }
+
+ html {
+   font-size: 14px;
+ }
+
+ body {
+   font-family: "Helvetica Neue", "微软雅黑", Arial;
+   margin: 0;
+   padding: 0;
+   color: #747474;
+   background-color: #fff;
+ }
+
+ ul,
+ li {
+   list-style: none;
+ }
+
+ .lf {
+   float: left;
+ }
+
+ .rg {
+   float: right;
+ }
+
+ .headline {
+   height: 26px;
+ }
+
+ .com-button {
+   cursor: pointer;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 1.42;
+   position: relative;
+   display: inline-block;
+   margin-bottom: 0;
+   padding: 6px 12px;
+   -webkit-transition: all;
+   transition: all;
+   -webkit-transition-timing-function: linear;
+   transition-timing-function: linear;
+   -webkit-transition-duration: .2s;
+   transition-duration: .2s;
+   text-align: center;
+   vertical-align: top;
+   white-space: nowrap;
+   border: 1px solid @theme-color;
+   border-radius: 3px;
+   background-clip: padding-box;
+   outline: 0;
+ }
+
+ a {
+   color: #fff;
+ }
+
+ .frame {
+   position: absolute;
+   top: 0;
+   height: 0;
+   right: 0;
+   bottom: 0;
+   width: 100%;
+   height: 100%;
+ }
+
+ input {
+   outline: none;
+ }
+ /*中心框架*/
+
+ .content-left {
+   height: 100%;
+   display: initial;
+   padding: 0;
+ }
+
+ .content {
+   position: absolute;
+   top: 56px;
+   bottom: 2.4rem;
+   width: 100%;
+ }
+
+ .com-paint {
+   height: 96% !important;
+   padding: 0% 10px;
+   background-color: #e4e4e4;
+   min-width: 85rem;
+ }
+
+ .com-paint-head {
+   display: flex;
+   height: 50px;
+   line-height: 50px;
+   justify-content: space-between;
+ }
+
+ .com-paint-main {
+   background: #fff;
+   height: 94%;
+   overflow: auto;
+ }
+ /*ul样式*/
+
+ .com-table {
+   position: relative;
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-left: 0;
+   list-style: none;
+   background-color: #fff;
+   font-size: 13px;
+ }
+
+ .com-table::after {
+   width: 0;
+ }
+
+ .com-table-cell {
+   position: relative;
+   overflow: hidden;
+   padding: 11px 15px;
+   font-size: .8rem;
+   text-align: center;
+ }
+
+ .com-table-cell:after {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   height: 1px;
+   content: '';
+   -webkit-transform: scaleY(.5);
+   transform: scaleY(.5);
+   background-color: #c8c7cc;
+ }
+
+ .com-table-cell:focus,
+ .com-table-cell:hover {
+   background-color: #fff;
+   cursor: pointer;
+ }
+
+ .com-table-cell>a {
+   position: relative;
+   display: block;
+   overflow: hidden;
+   margin: -11px -15px;
+   padding: inherit;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   color: inherit;
+ }
+
+ .butColor {
+   background: #e6e6e6;
+ }
+
+ .appointment {
+   background-repeat: no-repeat;
+   background-position: 11px 5px;
+   padding-left: 28px;
+   color: #116f7d;
+ }
+ /*滚动条 start*/
+
+ ::-webkit-scrollbar {
+   width: 5px;
+   height: 4px;
+   background-color: #F5F5F5;
+ }
+ /*定义滚动条轨道 内阴影+圆角*/
+
+ ::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+   background: #fff;
+ }
+ /*定义滑块 内阴影+圆角*/
+
+ ::-webkit-scrollbar-thumb {
+   border-radius: 3px;
+   -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, .3);
+   background-color: rgba(0, 0, 0, 0);
+ }
+
+ ::-webkit-scrollbar-thumb:hover {
+   border-radius: 3px;
+   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+   background-color: @theme-color;
+ }
+
+ .blue {
+   color: #116f7d;
+ }
+
+ .red {
+   color: red;
+ }
+
+ //
+ .doIt {
+   cursor: pointer;
+   i {
+     font-size: 24px;
+   }
+ }
+
+ .point {
+   cursor: pointer;
+ }

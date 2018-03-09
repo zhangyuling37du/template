@@ -1,0 +1,11 @@
+  .selectStatus{
+  width:105px;
+  margin-right:20px;
+}
+.com-paint{
+  background: #fff;
+  height:94%;
+}
+.el-pagination{
+  float:right;
+}

@@ -1,0 +1,441 @@
+/*element定义动画*/
+ @import "../theme/theme.less";
+.el-input__inner:focus {
+    border: 1px solid @theme-color;
+}
+
+.el-progress-bar__outer {
+    background: #e6e6e6;
+    height: 10px;
+}
+.strip-progress10 .el-progress-bar__outer {
+  background: #ffa800;
+}
+.el-input__inner {
+    border-radius: 0px;
+    height: 28px;
+    border-color: #ccc;
+}
+
+.el-tree-node__content:hover {
+    background-color: @theme-color;
+    color: #fff;
+}
+
+.el-button {
+    // width:70px;
+    padding:6px 12px;
+    // margin-left:1rem;
+    border-radius: 0px;
+}
+
+.el-button--large {
+    padding: 11px 19px;
+    font-size: 16px;
+}
+
+.el-button.el-nomal {
+    padding: 7px 15px;
+}
+
+.el-button--primary {
+    background-color: #fff;
+    color: #fff;
+    border-color: @theme-color;
+}
+.el-button--primary:focus,.el-button--primary:hover {
+    background-color: @theme-color;
+}
+.el-button--primary span{
+    color: #fff;
+    padding:6px 20px;
+}
+.el-button:focus, .el-button:hover {
+    color: @theme-color;
+    border-color: @theme-color;
+}
+
+.el-button--warning:focus, .el-button--warning:hover {
+    background: #f9c855;
+    border-color: #f9c855;
+    color: #fff;
+}
+
+.el-button--success:focus, .el-button--success:hover {
+    background: #42d885;
+    border-color: #42d885;
+    color: #fff;
+}
+
+.el-button--danger:focus, .el-button--danger:hover {
+    background: #fc797c;
+    border-color: #fc797c;
+    color: #fff;
+}
+
+.el-button--info {
+    background: #fff;
+    border-color: #73ccff;
+    color: #73ccff;
+}
+
+.el-button--info:focus, .el-button--info:hover {
+    background: #73ccff;
+    border-color: #73ccff;
+    color: #fff;
+}
+
+.el-green {
+    background-color: @theme-color;
+    color: #fff;
+    border-color: @theme-color;
+}
+.el-gray{
+     background-color:#d3d3d3;
+      border-color:#e5e5e5;
+}
+.el-green-hollow {
+    background-color: #fff;
+    color: @theme-color;
+    border-color: @theme-color;
+}
+
+.el-green:focus, .el-green:hover {
+    color: #fff;
+    border-color: @theme-color;
+    background-color: @theme-color;
+}
+
+.el-green-hollow:focus, .el-green-hollow:hover {
+    color: #fff;
+    border-color: @theme-color;
+    background-color: @theme-color;
+}
+
+.el-gray {
+    background-color: #CCCCCC;
+    border: 1px solid #CCCCCC;
+    color: #fff;
+}
+
+.el-gray:focus, .el-gray:hover {
+    border: 1px solid #d9d9d9;
+    background-color: #d9d9d9;
+    color: #fff;
+}
+
+.el-error {
+    background: #fff;
+    border-color: #F43D40;
+    color: #F43D40;
+}
+
+.el-error:focus, .el-error:hover {
+    color: #fff;
+    border-color: #F43D40;
+    background-color: #F43D40;
+}
+
+
+/*loading*/
+
+.el-loading-spinner .path {
+    stroke: @theme-color;
+}
+
+/*面包屑导航栏*/
+
+.el-breadcrumb__item__inner a:hover, .el-breadcrumb__item__inner:hover, .el-pagination button:hover, .el-pager li:hover {
+    color: @theme-color;
+}
+.el-pager li.active {
+    color: #fff;
+    cursor: default;
+}
+.el-checkbox__inner:hover, .el-select .el-input__inner:focus {
+    border-color: @theme-color;
+}
+
+.el-select-dropdown__item.selected, .el-select-dropdown__item.selected.hover {
+    background-color: @theme-color
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-pager li.active {
+    border-color: @theme-color;
+    background-color: @theme-color;
+}
+
+
+/*输入域*/
+
+.el-textarea__inner:focus {
+    border: 1px solid @theme-color;
+}
+
+
+/*日历*/
+
+.el-date-table td.current:not(.disabled), .el-date-table td.end-date, .el-date-table td.start-date {
+    background-color: @theme-color !important;
+    color: #fff !important;
+}
+
+.el-date-table td.today {
+    color: @theme-color;
+}
+
+.el-date-table td.today:before {
+    border-top: .5em solid @theme-color;
+}
+.el-icon-date:before{
+    content: "\E611";
+    color: #126f7e;
+}
+.el-icon-time:before {
+    content: "\E622";
+    color: #126f7e;
+}
+/*标签页*/
+
+.el-tabs__nav-scroll {
+    background-color: #F5F5F5;
+}
+
+.el-tabs__item.is-active {
+    color: @theme-color;
+    background-color: #FFFFFF;
+}
+
+.el-tabs__active-bar {
+    background-color: @theme-color;
+}
+/*swicth按钮*/
+
+.el-switch__core .el-switch__button {
+    top: -2px;
+    left: -2px;
+    width: 20px;
+    height: 20px;
+}
+
+.el-switch__label, .el-switch__label * {
+    font-size: 13px;
+}
+
+/*时间控件*/
+
+.el-date-picker__header-label.active, .el-date-picker__header-label:hover, .el-picker-panel__icon-btn:hover {
+    color: @theme-color;
+}
+
+.el-year-table td.current:not(.disabled) .cell, .el-month-table td.current:not(.disabled) .cell {
+    background-color: @theme-color !important;
+}
+
+.time-select-item.selected:not(.disabled), .time-select-item.selected:not(.disabled):hover {
+    background-color: @theme-color;
+}
+
+
+/*树中的 highlight-current属性*/
+
+.el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content {
+    background-color: @theme-color;
+    color: white;
+}
+
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: @theme-color;
+    border-color: @theme-color;
+}
+
+.com-reg .el-cascader-menu__item.is-active {
+    background-color: @theme-color;
+}
+
+.el-picker-panel__link-btn {
+    color: @theme-color;
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+    border-color: @theme-color;
+    background: @theme-color;
+}
+
+.el-radio-button__inner:hover {
+    color: @theme-color;
+}
+  .el-radio-button__orig-radio:checked+.el-radio-button__inner {
+    color: #fff;
+    background-color: @theme-color;
+}
+.el-radio-button:first-child .el-radio-button__inner{
+   border-left:none;
+   border-radius:none;
+   box-shadow: none!important;
+  }
+.el-radio-button__inner{
+   padding:2px;
+   margin-right:5px;
+   border:none;
+}
+.el-radio-button:first-child .el-radio-button__inner{
+   border-radius:0;
+}
+.el-radio-button:last-child .el-radio-button__inner{
+   border-radius:0;
+}
+.el-radio-button__orig-radio:checked+.el-radio-button__inner {
+    background-color: @theme-color;
+    border-color: @theme-color;
+      box-shadow: none; 
+}
+/*//表格*/
+
+.el-checkbox__inner {
+    border-radius: 2px;
+}
+
+.el-table__header-wrapper thead div {
+    color: #747474;
+    background: #eeeeee;
+}
+
+.el-table th {
+    background: #eeeeee;
+}
+
+.el-table .caret-wrapper, .el-table th>.cell {
+    text-align: center;
+}
+
+.el-table .cell, .el-table th>div {
+    padding: 0;
+}
+
+.el-table .el-tooltip.cell {
+    white-space: normal;
+}
+
+.el-table .cell {
+    word-break: keep-all;
+    line-height: 26px;
+}
+.el-table td, .el-table th {
+    padding: 5px 0!important;
+}
+.el-table__body-wrapper is-scroll-right{
+     border-color: @theme-color;
+}
+/*悬浮*/
+
+.el-table__body tr.hover-row>td {
+    background-color: #edf7ff !important;
+}
+
+.el-table__body tr>td {
+    background: #fafafa;
+    text-align: center;
+}
+
+.el-table .cell img {
+    padding: 0px 4px;
+}
+
+
+/*点击*/
+
+.el-table__body tr.current-row>td {
+    background: #fff6e5;
+}
+
+.el-form-item__label {
+    color: #9c9c9c;
+    text-align: left;
+}
+
+// 分页
+.el-pagination {
+    float: right;
+}
+
+//滑动块
+
+.el-form-item {
+  margin-bottom: 10px;
+}
+
+.el-tabs__header {
+  border: none;
+  margin: 0;
+}
+
+.el-tabs__item {
+  background: #d3d3d3;
+  width:50%;
+}
+
+.el-tabs__nav {
+  width: 100%;
+}
+
+.el-tabs__active-bar {
+  height: 0px;
+}
+
+.el-tabs__item.is-active span {
+  color: #fff;
+}
+
+.el-slider__runway {
+  border-radius: none;
+  height: 6px;
+  margin:0;
+}
+
+.el-slider__button,
+.el-slider__bar,
+.el-slider__button el-tooltip:hover {
+  background: #126f7e;
+}
+//表单form
+.el-form-item__error {
+    color: #ff4949;
+    font-size: 12px;
+    line-height: 1;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+//提示字
+.el-form-item__error {
+  padding-top: 0;
+}
+//时间
+.el-time-panel__btn.confirm {
+    color: @theme-color;
+  }
+  
+  .time-select-item.selected:not(.disabled),
+  .el-time-panel__content::after, .el-time-panel__content::before {
+    background-color: @theme-color;
+  }
+ 
+
+
+.el-form-item.is-success .el-input__inner, .el-form-item.is-success .el-input__inner:focus, .el-form-item.is-success .el-textarea__inner, .el-form-item.is-success .el-textarea__inner:focus {
+    border-color: #10707e;
+}
+//下拉框
+.el-select-dropdown__item.selected {
+    color: #fff;
+    font-weight: bold;
+}
+ 
+ //折叠面板
+ .el-collapse-item__header{
+  margin:5px 0;
+ }
+ .el-collapse-item__content{
+ padding-bottom:0px;
+ }
